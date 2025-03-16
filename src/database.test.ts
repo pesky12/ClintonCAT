@@ -41,15 +41,30 @@ describe('PagesDB', () => {
             pagesDb = new PagesDB();
 
             pagesDb.setPages([
-                { pageId: 1, pageTitle: 'Laptop Repair Info', popupText: 'Laptop info', category: 'Hardware' },
-                { pageId: 2, pageTitle: 'Laptop Repairs Q&A', popupText: 'Laptop Q&A', category: 'Hardware' },
+                {
+                    pageId: 1,
+                    pageTitle: 'Laptop Repair Info',
+                    popupText: 'Laptop info',
+                    category: 'Hardware',
+                },
+                {
+                    pageId: 2,
+                    pageTitle: 'Laptop Repairs Q&A',
+                    popupText: 'Laptop Q&A',
+                    category: 'Hardware',
+                },
                 {
                     pageId: 3,
                     pageTitle: 'Laptop is repairable',
                     popupText: 'Laptop instructions',
                     category: 'Hardware',
                 },
-                { pageId: 4, pageTitle: 'Phone Repair Shop', popupText: 'Phones are complex', category: 'Hardware' },
+                {
+                    pageId: 4,
+                    pageTitle: 'Phone Repair Shop',
+                    popupText: 'Phones are complex',
+                    category: 'Hardware',
+                },
                 {
                     pageId: 5,
                     pageTitle: 'Laptop Keyboard tips',
@@ -151,7 +166,14 @@ describe('PagesDB', () => {
 
         beforeEach(() => {
             pagesDb = new PagesDB();
-            pagesDb.setPages([{ pageId: 1, pageTitle: 'Apple', popupText: 'shiny stuff alert', category: 'Hardware' }]);
+            pagesDb.setPages([
+                {
+                    pageId: 1,
+                    pageTitle: 'Apple',
+                    popupText: 'shiny stuff alert',
+                    category: 'Hardware',
+                },
+            ]);
         });
 
         test('should match the single word "Apple" only in whole-word contexts', () => {
@@ -182,5 +204,42 @@ describe('PagesDB', () => {
             expect(page.pageId).toBeGreaterThan(0);
             // TODO: expect(pages[0]).toBeInstanceOf(PageEntry);
         });
+    });
+
+    describe('CATWikiPageSearchResults', () => {
+        const _testPages = [
+            {
+                pageId: 1,
+                pageTitle: 'Test Page 1',
+                popupText: 'Test popup text 1',
+                category: 'Test category 1',
+            },
+            {
+                pageId: 2,
+                pageTitle: 'Test Page 2',
+                popupText: 'Test popup text 2',
+                category: 'Test category 2',
+            },
+            {
+                pageId: 3,
+                pageTitle: 'Test Page 3',
+                popupText: 'Test popup text 3',
+                category: 'Test category 3',
+            },
+        ];
+
+        // ...existing test code...
+
+        describe('addPageEntry', () => {
+            const _pageEntry = {
+                pageId: 1,
+                pageTitle: 'Test Page',
+                popupText: 'Test popup text',
+                category: 'Test category',
+            };
+            // ...existing test code...
+        });
+
+        // ...remaining tests...
     });
 });

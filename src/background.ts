@@ -7,7 +7,13 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 chrome.runtime.onMessage.addListener(
-    (message: IMainMessage, sender: chrome.runtime.MessageSender, sendResponse: VoidFunction) => {
-        main.onBrowserExtensionMessage(message, sender, sendResponse);
+    (message: IMainMessage | { action: string }, sender: chrome.runtime.MessageSender, sendResponse: VoidFunction) => {
+        if ('action' in message && message.action === 'open_popup') {
+            // Open the extension's popup when the bubble is clicked
+            chrome.action.openPopup();
+            return;
+        }
+
+        main.onBrowserExtensionMessage(message as IMainMessage, sender, sendResponse);
     }
 );

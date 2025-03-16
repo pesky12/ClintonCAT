@@ -56,7 +56,7 @@ export class PageEntry implements IPageEntry {
     }
 
     public url(): string {
-        return `${PageEntry.WIKI_URL}/${this.pageId.toString()}`;
+        return `${PageEntry.WIKI_URL}${this.pageId.toString()}`;
     }
 }
 

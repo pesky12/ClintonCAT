@@ -1,13 +1,16 @@
 # Clinton CAT
 
-![GitHub Release](<https://img.shields.io/github/v/release/WayneKeenan/ClintonCAT?include_prereleases&color=rgba(28%2C%20181%2C%2033%2C%201)&label=Release>)
-![GitHub contributors](<https://img.shields.io/github/contributors/WayneKeenan/ClintonCAT?label=Contributors&color=rgba(28%2C%20181%2C%2033%2C%201)>)
-![GitHub Downloads](https://img.shields.io/github/downloads/WayneKeenan/ClintonCAT/total?label=Downloads&color=blue)
-![GitHub Issues](https://img.shields.io/github/issues/WayneKeenan/ClintonCAT?label=Issues)
-![GitHub Pull Requests](https://img.shields.io/github/issues-pr/WayneKeenan/ClintonCAT?label=Pull%20Requests)
+**⚠️ IMPORTANT WARNING ⚠️**
 
-<!-- https://shields.io/badges/chrome-web-store-rating -->
-<!-- https://shields.io/badges/mozilla-add-on-rating -->
+**THIS IS A CUSTOM FORK OF THE ORIGINAL**
+
+This fork significantly differs from the original application in how it operates:
+
+- This version displays a **badge on the web page** when a page is found in the database alongside a clickable angery Clinton the cat.
+- The original version uses native Chrome notifications
+- Do NOT expect the same behavior or features as the original application
+- This version is maintained separately and may diverge further in functionality
+- This for is mainly for personal use and may not be maintained in the future
 
 ## About
 

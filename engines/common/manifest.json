@@ -11,7 +11,14 @@
     ],
     "web_accessible_resources": [
         {
-            "resources": ["alert.png"],
+            "resources": [
+                "alert.png",
+                "bubble-icon.css",
+                "icons/clinton16.png",
+                "icons/clinton32.png",
+                "icons/clinton48.png",
+                "icons/clinton128.png"
+            ],
             "matches": ["<all_urls>"]
         }
     ],

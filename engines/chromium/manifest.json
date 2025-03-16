@@ -2,5 +2,18 @@
     "background": {
         "service_worker": "background.js",
         "type": "module"
-    }
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "bubble-icon.css",
+                "icons/clinton16.png",
+                "icons/clinton32.png",
+                "icons/clinton48.png",
+                "icons/clinton128.png"
+            ],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "permissions": ["scripting", "activeTab"]
 }

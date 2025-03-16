@@ -1,0 +1,9 @@
+/* Ensure badge elements are visible even when parent has overflow: hidden */
+.badge-wrapper {
+    position: relative;
+    isolation: isolate; /* Creates a new stacking context */
+}
+
+.badge-wrapper > * {
+    overflow: visible !important; /* Ensure the badge isn't cut off */
+}
