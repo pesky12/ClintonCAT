@@ -10,7 +10,7 @@ This fork significantly differs from the original application in how it operates
 - The original version uses native Chrome notifications
 - Do NOT expect the same behavior or features as the original application
 - This version is maintained separately and may diverge further in functionality
-- This for is mainly for personal use and may not be maintained in the future
+- This fork is mainly for personal use and may not be maintained in the future
 
 ## About
 
